@@ -15,7 +15,7 @@ class IndisposableValidation
      * @param $validator
      * @return bool
      */
-    public function validate($attribute, $value, $parameters, $validator)
+    public function validateIndisposable($attribute, $value, $parameters, $validator)
     {
         return ! Indisposable::isDisposable($value);
     }
